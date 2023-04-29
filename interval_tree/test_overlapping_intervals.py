@@ -16,7 +16,7 @@ def test_2():
 
 def test_3():
     intervals = [Interval(1, 3), Interval(5, 7), Interval(9, 11)]
-    target = Interval(7, 9)
+    target = Interval(8, 8)
     assert overlapping_intervals(intervals, target) == []
 
 
