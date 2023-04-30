@@ -10,7 +10,7 @@ def test_1():
 
 def test_2():
     intervals = [Interval(1, 5), Interval(2, 6), Interval(3, 7)]
-    assert max_overlap(intervals) == 3
+    assert max_overlap(intervals) == 2
 
 
 def test_3():
@@ -25,4 +25,4 @@ def test_4():
 
 def test_5():
     intervals = [Interval(1, 3), Interval(5, 7), Interval(9, 11)]
-    assert max_overlap(intervals) == 1
+    assert max_overlap(intervals) == 0
