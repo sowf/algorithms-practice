@@ -12,6 +12,9 @@ def max_overlap(intervals: List[Interval]) -> int:
         else:
             root.right = insert(root.right, interval)
 
+        if interval.hi > root.max:
+            root.max = interval.hi
+
         return root
 
     root = None
