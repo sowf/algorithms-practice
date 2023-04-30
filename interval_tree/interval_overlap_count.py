@@ -32,8 +32,6 @@ def interval_overlap_count(intervals: List[Interval]) -> List[int]:
         if root.right and interval.lo <= root.right.max:
             res += count(root.right, interval)
 
-        print(interval, res)
-
         return res
 
 
